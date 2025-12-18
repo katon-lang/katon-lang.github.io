@@ -12,4 +12,16 @@
          <loc>https://katon-lang.github.io/semantics/</loc>
          <lastmod>2025-12-18</lastmod>
     </url>
+    <url>
+         <loc>https://katon-lang.github.io/documentation/func/</loc>
+         <lastmod>2025-12-18</lastmod>
+    </url>
+    <url>
+         <loc>https://katon-lang.github.io/documentation/int/</loc>
+         <lastmod>2025-12-18</lastmod>
+    </url>
+    <url>
+         <loc>https://katon-lang.github.io/documentation/nat/</loc>
+         <lastmod>2025-12-18</lastmod>
+    </url>
 </urlset>

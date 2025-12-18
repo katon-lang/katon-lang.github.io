@@ -5,16 +5,23 @@ repo_name: katon-lang/katon
 theme:
   name: material
   palette:
-    scheme: default
+    scheme: slate
     primary: indigo
   font:
+    text: Open Sans
     code: Roboto Mono
   icon:
     logo: fontawesome/solid/fire
+  features:
+    - navigation.footer
 nav:
   - Home: index.md
   - Semantics: semantics.md
-  - Documentation: documentation.md
+  - Documentation:
+      - Overview: documentation.md
+      - int: documentation/int.md
+      - nat: documentation/nat.md
+      - func: documentation/func.md
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
@@ -24,6 +31,9 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
   - pymdownx.superfences
 
 extra_javascript:

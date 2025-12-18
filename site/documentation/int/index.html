@@ -8,31 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://katon-lang.github.io/semantics/">
+        <link rel="canonical" href="https://katon-lang.github.io/documentation/int/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../documentation/">
+        <link rel="next" href="../nat/">
       
       
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>Semantics - Katon Verification Language</title>
+        <title>int - Katon Verification Language</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,7 +53,7 @@
     
       <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#semantics-of-katon" class="md-skip">
+        <a href="#int" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Katon Verification Language" class="md-header__button md-logo" aria-label="Katon Verification Language" data-md-component="logo">
+    <a href="../.." title="Katon Verification Language" class="md-header__button md-logo" aria-label="Katon Verification Language" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M160.5-26.4c9.3-7.8 23-7.5 31.9.9 12.3 11.6 23.3 24.4 33.9 37.4 13.5 16.5 29.7 38.3 45.3 64.2 5.2-6.8 10-12.8 14.2-17.9 1.1-1.3 2.2-2.7 3.3-4.1C297 44.3 306.8 32 319.9 32c13.4 0 22.8 11.9 30.8 22.1q1.95 2.55 3.9 4.8c10.3 12.4 24 30.3 37.7 52.4 27.2 43.9 55.6 106.4 55.6 176.6 0 123.7-100.3 224-224 224S0 411.7 0 288c0-91.1 41.1-170 80.5-225 19.9-27.7 39.7-49.9 54.6-65.1 8.2-8.4 16.5-16.7 25.5-24.2zM225.7 416c25.3 0 47.7-7 68.8-21 42.1-29.4 53.4-88.2 28.1-134.4-4.5-9-16-9.6-22.5-2l-25.2 29.3c-6.6 7.6-18.5 7.4-24.7-.5-17.3-22.1-49.1-62.4-65.3-83-5.4-6.9-15.2-8-21.5-1.9-18.3 17.8-51.5 56.8-51.5 104.3 0 68.6 50.6 109.2 113.7 109.2z"/></svg>
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Semantics
+              int
             
           </span>
         </div>
@@ -202,7 +202,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Katon Verification Language" class="md-nav__button md-logo" aria-label="Katon Verification Language" data-md-component="logo">
+    <a href="../.." title="Katon Verification Language" class="md-nav__button md-logo" aria-label="Katon Verification Language" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M160.5-26.4c9.3-7.8 23-7.5 31.9.9 12.3 11.6 23.3 24.4 33.9 37.4 13.5 16.5 29.7 38.3 45.3 64.2 5.2-6.8 10-12.8 14.2-17.9 1.1-1.3 2.2-2.7 3.3-4.1C297 44.3 306.8 32 319.9 32c13.4 0 22.8 11.9 30.8 22.1q1.95 2.55 3.9 4.8c10.3 12.4 24 30.3 37.7 52.4 27.2 43.9 55.6 106.4 55.6 176.6 0 123.7-100.3 224-224 224S0 411.7 0 288c0-91.1 41.1-170 80.5-225 19.9-27.7 39.7-49.9 54.6-65.1 8.2-8.4 16.5-16.7 25.5-24.2zM225.7 416c25.3 0 47.7-7 68.8-21 42.1-29.4 53.4-88.2 28.1-134.4-4.5-9-16-9.6-22.5-2l-25.2 29.3c-6.6 7.6-18.5 7.4-24.7-.5-17.3-22.1-49.1-62.4-65.3-83-5.4-6.9-15.2-8-21.5-1.9-18.3 17.8-51.5 56.8-51.5 104.3 0 68.6 50.6 109.2 113.7 109.2z"/></svg>
@@ -232,7 +232,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -256,6 +256,110 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../../semantics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semantics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Documentation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -275,7 +379,7 @@
   <span class="md-ellipsis">
     
   
-    Semantics
+    int
   
 
     
@@ -293,7 +397,7 @@
   <span class="md-ellipsis">
     
   
-    Semantics
+    int
   
 
     
@@ -319,10 +423,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#verification-oriented-semantics" class="md-nav__link">
+  <a href="#semantics" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Verification-Oriented Semantics
+        Semantics
       
     </span>
   </a>
@@ -330,10 +434,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#state-as-logical-variables" class="md-nav__link">
+  <a href="#basic-usage" class="md-nav__link">
     <span class="md-ellipsis">
       
-        State as Logical Variables
+        Basic Usage
       
     </span>
   </a>
@@ -341,10 +445,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#static-single-assignment-ssa" class="md-nav__link">
+  <a href="#arithmetic-operations" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Static Single Assignment (SSA)
+        Arithmetic Operations
       
     </span>
   </a>
@@ -352,10 +456,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mutation-as-versioning" class="md-nav__link">
+  <a href="#copy-semantics" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Mutation as Versioning
+        Copy Semantics
       
     </span>
   </a>
@@ -363,76 +467,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-meaning-of-old" class="md-nav__link">
+  <a href="#current-limitations-to-be-fixed" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The Meaning of old
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#verification-conditions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Verification Conditions
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quantifier-free-smt-fragment" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Quantifier-Free SMT Fragment
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#totality-and-definedness" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Totality and Definedness
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#absence-of-control-flow-semantics" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Absence of Control-Flow Semantics
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#soundness-boundary" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Soundness Boundary
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Summary
+        Current Limitations (To Be Fixed)
       
     </span>
   </a>
@@ -446,80 +484,6 @@
     </li>
   
 
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Documentation
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Documentation
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../documentation/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Overview
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -529,35 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../documentation/int/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    int
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../documentation/nat/" class="md-nav__link">
+      <a href="../nat/" class="md-nav__link">
         
   
   
@@ -585,7 +521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../documentation/func/" class="md-nav__link">
+      <a href="../func/" class="md-nav__link">
         
   
   
@@ -640,10 +576,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#verification-oriented-semantics" class="md-nav__link">
+  <a href="#semantics" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Verification-Oriented Semantics
+        Semantics
       
     </span>
   </a>
@@ -651,10 +587,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#state-as-logical-variables" class="md-nav__link">
+  <a href="#basic-usage" class="md-nav__link">
     <span class="md-ellipsis">
       
-        State as Logical Variables
+        Basic Usage
       
     </span>
   </a>
@@ -662,10 +598,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#static-single-assignment-ssa" class="md-nav__link">
+  <a href="#arithmetic-operations" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Static Single Assignment (SSA)
+        Arithmetic Operations
       
     </span>
   </a>
@@ -673,10 +609,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mutation-as-versioning" class="md-nav__link">
+  <a href="#copy-semantics" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Mutation as Versioning
+        Copy Semantics
       
     </span>
   </a>
@@ -684,76 +620,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-meaning-of-old" class="md-nav__link">
+  <a href="#current-limitations-to-be-fixed" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The Meaning of old
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#verification-conditions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Verification Conditions
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quantifier-free-smt-fragment" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Quantifier-Free SMT Fragment
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#totality-and-definedness" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Totality and Definedness
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#absence-of-control-flow-semantics" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Absence of Control-Flow Semantics
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#soundness-boundary" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Soundness Boundary
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Summary
+        Current Limitations (To Be Fixed)
       
     </span>
   </a>
@@ -780,125 +650,89 @@
   
 
 
-<h1 id="semantics-of-katon">Semantics of Katon</h1>
-<p>This page describes the <strong>formal semantic model</strong> of the Katon Verification Language.</p>
-<p>Katon does not define execution semantics in the traditional sense.
-Instead, it defines a <em>verification semantics</em>: how programs are translated into logical formulas and checked by an SMT solver.</p>
-<h2 id="verification-oriented-semantics">Verification-Oriented Semantics</h2>
-<p>A Katon program is not executed.
-It is <strong>compiled into verification conditions (VCs)</strong> that must be proven valid.</p>
-<p>Semantics answer the question:</p>
-<blockquote>
-<p><em>Under what logical conditions is this specification satisfied?</em></p>
-</blockquote>
-<p>There is no runtime, no machine state, and no observable behavior.
-Only logical truth.</p>
-<h2 id="state-as-logical-variables">State as Logical Variables</h2>
-<p>Katon models program state as a collection of <strong>logical variables</strong>.</p>
+<h1 id="int">int</h1>
+<p>The <code>int</code> type represents mathematical integers in Katon. It is the most fundamental value type and is used for arithmetic, indexing, counters, and reasoning about numeric state changes.</p>
+<p>Unlike machine integers in systems languages, <code>int</code> in Katon is unbounded and purely logical: it models integers as they exist in mathematics, not as fixed‑width hardware values.</p>
+<h2 id="semantics">Semantics</h2>
+<p>An <code>int</code> value denotes an element of the mathematical set ℤ.</p>
+<p>Formally</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">int</span><span class="w"> </span><span class="err">≜</span><span class="w"> </span><span class="n">ℤ</span>
+</span></code></pre></div>
+<p>All operations on <code>int</code> are interpreted as exact mathematical operations. There is no overflow, underflow, or wrapping behavior.</p>
+<p>Katon deliberately uses the same <code>int</code> type for both:</p>
 <ul>
-<li>Each variable represents a value at a specific program point</li>
-<li>State changes create <em>new</em> logical variables</li>
-<li>Old values are never mutated or destroyed</li>
+<li>executable expressions, and</li>
+<li>logical specifications (preconditions, postconditions, invariants).</li>
 </ul>
-<p>State is therefore <em>persistent</em> and <em>immutable</em> at the semantic level.</p>
-<h2 id="static-single-assignment-ssa">Static Single Assignment (SSA)</h2>
-<p>All Katon programs are translated into <strong>Static Single Assignment (SSA)</strong> form.</p>
-<p>In SSA:</p>
-<ul>
-<li>Every variable is assigned exactly once</li>
-<li>Each assignment introduces a fresh version of that variable</li>
-</ul>
+<p>There is no distinction between “runtime integers” and “specification integers”.</p>
+<h2 id="basic-usage">Basic Usage</h2>
+<div class="language-go highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nx">let</span><span class="w"> </span><span class="nx">x</span><span class="p">:</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nx">let</span><span class="w"> </span><span class="nx">y</span><span class="p">:</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nx">let</span><span class="w"> </span><span class="nx">z</span><span class="p">:</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="o">-</span><span class="nx">y</span><span class="p">;</span>
+</span></code></pre></div>
+<p>Assignments conceptually create a new logical value; <code>int</code> values themselves are immutable.</p>
+<h2 id="arithmetic-operations">Arithmetic Operations</h2>
+<p>The following arithmetic operations are defined on <code>int</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>Addition</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Subtraction</td>
+</tr>
+<tr>
+<td>*</td>
+<td>Multiplication</td>
+</tr>
+<tr>
+<td>/</td>
+<td>Integer Division</td>
+</tr>
+<tr>
+<td>unary -</td>
+<td>Negation</td>
+</tr>
+</tbody>
+</table>
 <p>Example:</p>
-<div class="language-go highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nx">x</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">1</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nx">x</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span>
+<div class="language-go highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nx">let</span><span class="w"> </span><span class="nx">a</span><span class="p">:</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nx">let</span><span class="w"> </span><span class="nx">b</span><span class="p">:</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nx">let</span><span class="w"> </span><span class="nx">sum</span><span class="w">  </span><span class="p">=</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">b</span><span class="p">;</span><span class="w">   </span><span class="c1">// 10</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nx">let</span><span class="w"> </span><span class="nx">diff</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">b</span><span class="p">;</span><span class="w">   </span><span class="c1">// 4</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="nx">let</span><span class="w"> </span><span class="nx">prod</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">b</span><span class="p">;</span><span class="w">   </span><span class="c1">// 21</span>
 </span></code></pre></div>
-<p>Is translated conceptually into:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>x_0 = 1
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>x_1 = x_0 + 1
+<h2 id="copy-semantics">Copy Semantics</h2>
+<p><code>int</code> is a <strong>copy</strong> type.</p>
+<ul>
+<li>Reading an <code>int</code> does not consume it</li>
+<li>Assigning or passing an <code>int</code> never invalidates the original value</li>
+<li>There is no ownership transfer, borrowing, or aliasing</li>
+</ul>
+<div class="language-go highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nx">let</span><span class="w"> </span><span class="nx">a</span><span class="p">:</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nx">let</span><span class="w"> </span><span class="nx">b</span><span class="p">:</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">a</span><span class="p">;</span><span class="w">   </span><span class="c1">// always allowed</span>
 </span></code></pre></div>
-<p>This eliminates implicit temporal reasoning.
-All data dependencies are explicit in the logic.</p>
-<h2 id="mutation-as-versioning">Mutation as Versioning</h2>
-<p>What appears as mutation in Katon syntax is <strong>version creation</strong> semantically.</p>
-<p>For arrays:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>arr[0] = 99
-</span></code></pre></div>
-<p>Is translated into:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>arr_1 = store(arr_0, 0, 99)
-</span></code></pre></div>
-<p>Where:</p>
+<h2 id="current-limitations-to-be-fixed">Current Limitations (To Be Fixed)</h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Some safety properties of <code>int</code> are not fully enforced yet.</p>
+</div>
 <ul>
-<li><code>arr_0</code> is the array before the update</li>
-<li><code>arr_1</code> is the array after the update</li>
-<li><code>store</code> is the SMT array update function</li>
+<li>Division by zero is not consistently rejected at verification time</li>
+<li>Some arithmetic safety checks are still being formalized</li>
+<li>Error messages related to numeric misuse may be incomplete</li>
 </ul>
-<p>No array is ever modified in-place.</p>
-<h2 id="the-meaning-of-old">The Meaning of <code>old</code></h2>
-<p>The expression <code>old(e)</code> refers to the value of <code>e</code> in the <strong>pre-state</strong> of a <code>func</code>.</p>
-<p>Semantically:</p>
-<ul>
-<li>All parameters and mutable variables are given an initial version</li>
-<li><code>old(x)</code> is resolved to that initial version (<code>x_0</code>)</li>
-</ul>
-<p>Example:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>ensures arr[1] == old(arr)[1]
-</span></code></pre></div>
-<p>Is translated into:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>select(arr_final, 1) == select(arr_0, 1)
-</span></code></pre></div>
-<p>Because SSA versions are explicit, <code>old</code> is unambiguous and requires no temporal logic.</p>
-<h2 id="verification-conditions">Verification Conditions</h2>
-<p>Katon doesn't "run" your code to see if it works. Instead, it bundles your entire function—the requirements, the logic, and the goals—into a single massive logical question called a Verification Condition (VC).</p>
-<p>The question looks like this:</p>
-<div class="arithmatex">\[Preconditions ⟹ Postconditions\]</div>
-<p>Katon hands this formula to an SMT solver. The solver doesn't look for a way to execute the code; it looks for a counter-example. It asks: <em>"Is there any possible set of numbers where the '<code>requires</code>' are true, but the '<code>ensures</code>' are false?"</em> If the solver finds even one such case (like an integer overflow or a boundary error), the program is <strong>Invalid</strong>.</p>
-<ul>
-<li>If the solver proves no such case can ever exist, the program is <strong>Verified</strong>.</li>
-</ul>
-<h2 id="quantifier-free-smt-fragment">Quantifier-Free SMT Fragment</h2>
-<p>Katon targets a restricted SMT logic:</p>
-<ul>
-<li><strong>QF_AUFNIA</strong> (quantifier-free arrays, uninterpreted functions, and nonlinear integer arithmetic)</li>
-</ul>
-<p>Design consequences:</p>
-<ul>
-<li>No user-defined quantifiers</li>
-<li>No higher-order reasoning</li>
-<li>No solver hints or tactics</li>
-</ul>
-<p>This restriction keeps solver behavior predictable and scalable.</p>
-<h2 id="totality-and-definedness">Totality and Definedness</h2>
-<p>All Katon functions are <strong>total</strong> by construction.</p>
-<ul>
-<li>Division by zero</li>
-<li>Out-of-bounds access</li>
-<li>Invalid arithmetic</li>
-</ul>
-<p>Must be ruled out by preconditions or proven impossible.</p>
-<p>If definedness cannot be proven automatically, verification fails.</p>
-<h2 id="absence-of-control-flow-semantics">Absence of Control-Flow Semantics</h2>
-<p>Katon does not model:</p>
-<ul>
-<li>loops as execution constructs</li>
-<li>recursion as computation</li>
-<li>branching as control flow</li>
-</ul>
-<p>Instead:</p>
-<ul>
-<li>conditionals are translated into logical implications</li>
-<li>invariants are treated as assumptions</li>
-</ul>
-<p>There is no notion of step-by-step execution.</p>
-<h2 id="soundness-boundary">Soundness Boundary</h2>
-<p>Katon is sound <strong>relative to its SMT backend</strong>.</p>
-<p>That is:</p>
-<ul>
-<li>If verification succeeds, the specification holds in the SMT model</li>
-<li>If the solver is unsound, Katon inherits that unsoundness</li>
-</ul>
-<p>Katon intentionally avoids features that would widen this boundary.</p>
-<h2 id="summary">Summary</h2>
-<p>Katon is not a language for telling a computer what to do. It is a language for telling a solver what must be true. By stripping away the concepts of registers, clocks, and memory, Katon turns programming into a pure exercise in geometry and truth.</p>
+<p>These limitations are known and temporary.
+They will be addressed as Katon’s verification condition generation and type system mature.</p>
 
 
 
@@ -928,7 +762,7 @@ All data dependencies are explicit in the logic.</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -938,20 +772,20 @@ All data dependencies are explicit in the logic.</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Home
+                Overview
               </div>
             </div>
           </a>
         
         
           
-          <a href="../documentation/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
+          <a href="../nat/" class="md-footer__link md-footer__link--next" aria-label="Next: nat">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Overview
+                nat
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -992,12 +826,12 @@ All data dependencies are explicit in the logic.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.footer"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.footer"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="../javascripts/katex.js"></script>
+        <script src="../../javascripts/katex.js"></script>
       
         <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
       
