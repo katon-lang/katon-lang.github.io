@@ -1,0 +1,14 @@
+site_name: Katon Verification Language
+site_url: https://katon-lang.github.io
+theme: 
+  name: material
+  palette:
+    scheme: slate
+    primary: red
+  font:
+    code: Roboto
+  icon:
+    logo: fontawesome/solid/fire
+nav:
+  - Home: index.md
+  - Semantics: semantics.md
