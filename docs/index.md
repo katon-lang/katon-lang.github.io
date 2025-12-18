@@ -1,5 +1,4 @@
 # Katon Verification Language
-
 *A small, automated verification language for reasoning about state changes.*
 
 ## Overview
@@ -40,7 +39,7 @@ They are what make Katon precise.
 
 A Katon `func` specifies how state may change and what must hold afterward:
 
-```katon
+```go
 func update(arr [int]) {
     arr[0] = 99
     ensures arr[0] == 99

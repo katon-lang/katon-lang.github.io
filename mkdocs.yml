@@ -5,12 +5,8 @@ repo_name: katon-lang/katon
 theme: 
   name: material
   palette:
-    scheme: slate
-    primary: deep orange
-  features:
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.path
+    scheme: default
+    primary: indigo
   font:
     code: Roboto
   icon:
