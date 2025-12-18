@@ -1,10 +1,16 @@
 site_name: Katon Verification Language
 site_url: https://katon-lang.github.io
+repo_url: https://github.com/katon-lang/katon
+repo_name: katon-lang/katon
 theme: 
   name: material
   palette:
     scheme: slate
-    primary: red
+    primary: deep orange
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
   font:
     code: Roboto
   icon:
@@ -12,3 +18,4 @@ theme:
 nav:
   - Home: index.md
   - Semantics: semantics.md
+copyright: Copyright &copy; 2025 Katon Project
