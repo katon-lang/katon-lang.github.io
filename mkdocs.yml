@@ -18,6 +18,7 @@ nav:
   - Home: index.md
   - Semantics: semantics.md
   - Installation: installation.md
+  - CLI: cli.md
   - Documentation:
       - Overview: documentation.md
       - int: documentation/int.md
