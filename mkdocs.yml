@@ -6,12 +6,12 @@ theme:
   name: material
   palette:
     scheme: slate
-    primary: indigo
+    primary: black
   font:
     text: Open Sans
     code: Roboto Mono
   icon:
-    logo: fontawesome/solid/fire
+    logo: material/fire
   features:
     - navigation.footer
 nav:
