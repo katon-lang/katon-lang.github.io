@@ -1,8 +1,10 @@
 # int
 
-The `int` type represents mathematical integers in Katon. It is the most fundamental value type and is used for arithmetic, indexing, counters, and reasoning about numeric state changes.
+The `int` type denotes mathematical integers in Katon.
 
-Unlike machine integers in systems languages, `int` in Katon is unbounded and purely logical: it models integers as they exist in mathematics, not as fixed‑width hardware values.
+It is the fundamental numeric type of the language and is used for arithmetic expressions, indexing, counters, and numeric reasoning in specifications.
+
+`int` values are unbounded and purely logical. They are not fixed-width and do not model machine integers.
 
 ## Semantics
 

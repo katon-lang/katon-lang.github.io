@@ -8,29 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://katon-lang.github.io/">
+        <link rel="canonical" href="https://katon-lang.github.io/installation/">
       
       
+        <link rel="prev" href="../semantics/">
       
-        <link rel="next" href="semantics/">
+      
+        <link rel="next" href="../documentation/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
     
     
       
-        <title>Katon Verification Language</title>
+        <title>Installation - Katon Verification Language</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,7 +53,7 @@
     
       <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#katon-verification-language" class="md-skip">
+        <a href="#installation" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +92,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Katon Verification Language" class="md-header__button md-logo" aria-label="Katon Verification Language" data-md-component="logo">
+    <a href=".." title="Katon Verification Language" class="md-header__button md-logo" aria-label="Katon Verification Language" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.66 11.2c-.23-.3-.51-.56-.77-.82-.67-.6-1.43-1.03-2.07-1.66C13.33 7.26 13 4.85 13.95 3c-.95.23-1.78.75-2.49 1.32-2.59 2.08-3.61 5.75-2.39 8.9.04.1.08.2.08.33 0 .22-.15.42-.35.5-.23.1-.47.04-.66-.12a.6.6 0 0 1-.14-.17c-1.13-1.43-1.31-3.48-.55-5.12C5.78 10 4.87 12.3 5 14.47c.06.5.12 1 .29 1.5.14.6.41 1.2.71 1.73 1.08 1.73 2.95 2.97 4.96 3.22 2.14.27 4.43-.12 6.07-1.6 1.83-1.66 2.47-4.32 1.53-6.6l-.13-.26c-.21-.46-.77-1.26-.77-1.26m-3.16 6.3c-.28.24-.74.5-1.1.6-1.12.4-2.24-.16-2.9-.82 1.19-.28 1.9-1.16 2.11-2.05.17-.8-.15-1.46-.28-2.23-.12-.74-.1-1.37.17-2.06.19.38.39.76.63 1.06.77 1 1.98 1.44 2.24 2.8.04.14.06.28.06.43.03.82-.33 1.72-.93 2.27"/></svg>
@@ -110,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Installation
             
           </span>
         </div>
@@ -200,7 +202,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Katon Verification Language" class="md-nav__button md-logo" aria-label="Katon Verification Language" data-md-component="logo">
+    <a href=".." title="Katon Verification Language" class="md-nav__button md-logo" aria-label="Katon Verification Language" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.66 11.2c-.23-.3-.51-.56-.77-.82-.67-.6-1.43-1.03-2.07-1.66C13.33 7.26 13 4.85 13.95 3c-.95.23-1.78.75-2.49 1.32-2.59 2.08-3.61 5.75-2.39 8.9.04.1.08.2.08.33 0 .22-.15.42-.35.5-.23.1-.47.04-.66-.12a.6.6 0 0 1-.14-.17c-1.13-1.43-1.31-3.48-.55-5.12C5.78 10 4.87 12.3 5 14.47c.06.5.12 1 .29 1.5.14.6.41 1.2.71 1.73 1.08 1.73 2.95 2.97 4.96 3.22 2.14.27 4.43-.12 6.07-1.6 1.83-1.66 2.47-4.32 1.53-6.6l-.13-.26c-.21-.46-.77-1.26-.77-1.26m-3.16 6.3c-.28.24-.74.5-1.1.6-1.12.4-2.24-.16-2.9-.82 1.19-.28 1.9-1.16 2.11-2.05.17-.8-.15-1.46-.28-2.23-.12-.74-.1-1.37.17-2.06.19.38.39.76.63 1.06.77 1 1.98 1.44 2.24 2.8.04.14.06.28.06.43.03.82-.33 1.72-.93 2.27"/></svg>
@@ -227,6 +229,60 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../semantics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semantics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -246,7 +302,7 @@
   <span class="md-ellipsis">
     
   
-    Home
+    Installation
   
 
     
@@ -257,14 +313,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="." class="md-nav__link md-nav__link--active">
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    Home
+    Installation
   
 
     
@@ -290,10 +346,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Overview
+        Prerequisites
       
     </span>
   </a>
@@ -301,32 +357,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-makes-katon-different" class="md-nav__link">
+  <a href="#install-katon" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What Makes Katon Different
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#a-glimpse-of-katon" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        A Glimpse of Katon
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-katon-is-not" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What Katon Is Not
+        Install Katon:
       
     </span>
   </a>
@@ -337,60 +371,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="semantics/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Semantics
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="installation/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Installation
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -449,7 +429,7 @@
   
   
     <li class="md-nav__item">
-      <a href="documentation/" class="md-nav__link">
+      <a href="../documentation/" class="md-nav__link">
         
   
   
@@ -477,7 +457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="documentation/int/" class="md-nav__link">
+      <a href="../documentation/int/" class="md-nav__link">
         
   
   
@@ -505,7 +485,7 @@
   
   
     <li class="md-nav__item">
-      <a href="documentation/nat/" class="md-nav__link">
+      <a href="../documentation/nat/" class="md-nav__link">
         
   
   
@@ -533,7 +513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="documentation/func/" class="md-nav__link">
+      <a href="../documentation/func/" class="md-nav__link">
         
   
   
@@ -568,7 +548,7 @@
   
   
     <li class="md-nav__item">
-      <a href="contributing/" class="md-nav__link">
+      <a href="../contributing/" class="md-nav__link">
         
   
   
@@ -615,10 +595,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Overview
+        Prerequisites
       
     </span>
   </a>
@@ -626,32 +606,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-makes-katon-different" class="md-nav__link">
+  <a href="#install-katon" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What Makes Katon Different
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#a-glimpse-of-katon" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        A Glimpse of Katon
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-katon-is-not" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What Katon Is Not
+        Install Katon:
       
     </span>
   </a>
@@ -678,68 +636,17 @@
   
 
 
-<h1 id="katon-verification-language">Katon Verification Language</h1>
-<p><em>A small, automated verification language for reasoning about state changes.</em></p>
-<h2 id="overview">Overview</h2>
-<p>Katon is a <strong>verification-first language</strong> designed to answer a single question:</p>
-<blockquote>
-<p><em>Does this state-transforming computation satisfy its specification?</em></p>
-</blockquote>
-<p>It is not a general-purpose programming language.
-It is a <strong>proof-assistant theorem language</strong>, in the spirit of Dafny,
-but deliberately <strong>smaller, stricter, and more principled</strong>.</p>
-<p>Katon exists to make reasoning about mutable state <em>tractable, predictable,
-and fully automated</em>.</p>
-<h2 id="what-makes-katon-different">What Makes Katon Different</h2>
-<p>Katon is built around a small number of non-negotiable ideas:</p>
+<h1 id="installation">Installation</h1>
+<p>Katon is distributed as a single, cross-platform binary built with Rust. It can be installed using Cargo.</p>
+<h2 id="prerequisites">Prerequisites</h2>
 <ul>
-<li>
-<p><strong>Verification, not execution</strong><br />
-  Katon programs describe <em>state transitions</em>, not runtime behavior.</p>
-</li>
-<li>
-<p><strong>Ownership eliminates aliasing</strong><br />
-  Rust-style move semantics remove aliasing at the language level,
-  dramatically simplifying reasoning.</p>
-</li>
-<li>
-<p><strong>Automation over interaction</strong><br />
-  All proof obligations are discharged by SMT solvers.
-  There are no tactics, scripts, or interactive proofs.</p>
-</li>
-<li>
-<p><strong>Small types, strong guarantees</strong><br />
-  A minimal type system keeps verification decidable and solver-friendly.</p>
-</li>
+<li>A recent Rust toolchain</li>
+<li>Z3 (the SMT solver)</li>
 </ul>
-<p>These constraints are not limitations.
-They are what make Katon precise.</p>
-<h2 id="a-glimpse-of-katon">A Glimpse of Katon</h2>
-<p>A Katon <code>func</code> specifies how state may change and what must hold afterward:</p>
-<div class="language-go highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">func</span><span class="w"> </span><span class="nx">update</span><span class="p">(</span><span class="nx">arr</span><span class="w"> </span><span class="p">[</span><span class="kt">int</span><span class="p">])</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nx">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">99</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nx">ensures</span><span class="w"> </span><span class="nx">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">99</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nx">ensures</span><span class="w"> </span><span class="nx">arr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nx">old</span><span class="p">(</span><span class="nx">arr</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">}</span>
+<h2 id="install-katon">Install Katon:</h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>cargo<span class="w"> </span>install<span class="w"> </span>katon
 </span></code></pre></div>
-<h2 id="what-katon-is-not">What Katon Is Not</h2>
-<p>Katon intentionally excludes features that increase proof complexity:</p>
-<ul>
-<li>
-<p>no general recursion</p>
-</li>
-<li>
-<p>no heap allocation</p>
-</li>
-<li>
-<p>no higher-order functions</p>
-</li>
-<li>
-<p>no interactive proving</p>
-</li>
-</ul>
-<p>Every omission is deliberate.
-Every omission keeps reasoning simple.</p>
+<p>After installation, the <code>katon</code> binary will be available in your PATH.</p>
 
 
 
@@ -768,15 +675,31 @@ Every omission keeps reasoning simple.</p>
       
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
+          
+          <a href="../semantics/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Semantics">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Semantics
+              </div>
+            </div>
+          </a>
+        
         
           
-          <a href="semantics/" class="md-footer__link md-footer__link--next" aria-label="Next: Semantics">
+          <a href="../documentation/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Semantics
+                Overview
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -817,12 +740,12 @@ Every omission keeps reasoning simple.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.footer"], "search": "assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.footer"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
-        <script src="javascripts/katex.js"></script>
+        <script src="../javascripts/katex.js"></script>
       
         <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
       

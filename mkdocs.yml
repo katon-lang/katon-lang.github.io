@@ -17,11 +17,13 @@ theme:
 nav:
   - Home: index.md
   - Semantics: semantics.md
+  - Installation: installation.md
   - Documentation:
       - Overview: documentation.md
       - int: documentation/int.md
       - nat: documentation/nat.md
       - func: documentation/func.md
+  - Contributing: contributing.md
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
