@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://katon-lang.github.io/documentation/nat/">
+        <link rel="canonical" href="https://katon-lang.github.io/documentation/while/">
       
       
-        <link rel="prev" href="../int/">
+        <link rel="prev" href="../lemma/">
       
       
-        <link rel="next" href="../func/">
+        <link rel="next" href="../../contributing/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>nat - Katon IVL</title>
+        <title>while - Katon IVL</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#nat" class="md-skip">
+        <a href="#while" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              nat
+              while
             
           </span>
         </div>
@@ -470,37 +470,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    nat
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../nat/" class="md-nav__link">
         
   
   
@@ -516,92 +489,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#semantics" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Semantics
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#relationship-to-int" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Relationship to int
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#operations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Operations
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#assignment-and-safety" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Assignment and Safety
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#copy-semantics" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Copy Semantics
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#current-limitations-to-be-fixed" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Current Limitations (To Be Fixed)
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -667,10 +554,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../while/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -686,6 +582,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -745,80 +642,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#semantics" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Semantics
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#relationship-to-int" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Relationship to int
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#operations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Operations
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#assignment-and-safety" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Assignment and Safety
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#copy-semantics" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Copy Semantics
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#current-limitations-to-be-fixed" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Current Limitations (To Be Fixed)
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -837,99 +660,19 @@
   
 
 
-<h1 id="nat">nat</h1>
-<p>The <code>nat</code> type represents natural numbers in Katon.</p>
-<p>It is a refinement of <code>int</code> used to express values that are known to be non-negative. <code>nat</code> is commonly used for array indices, sizes, counters, and numeric invariants where negativity is invalid by definition.</p>
-<h2 id="semantics">Semantics</h2>
-<p>A <code>nat</code> value denotes an element of the mathematical set ℕ.</p>
-<p>Formally:</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">nat</span><span class="w"> </span><span class="err">≜</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="err">∈</span><span class="w"> </span><span class="n">ℤ</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="err">≥</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">}</span>
+<h1 id="while">while</h1>
+<p>Loops are one of the most challenging constructs to verify.
+For this reason, <strong>loop invariants are mandatory</strong> for while <code>loops</code> in Katon v0.1.0.</p>
+<p>A <code>while</code> loop must include one or more <code>invariant</code> clauses that describe properties preserved by every iteration. These invariants are used by the verifier to reason about loop correctness and termination.</p>
+<div class="language-rust highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">while</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">arr</span><span class="p">.</span><span class="n">length</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="n">invariant</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="n">invariant</span><span class="w"> </span><span class="n">sum</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="n">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sum</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">}</span>
 </span></code></pre></div>
-<p>Semantically, <code>nat</code> is a subset of <code>int</code> with an additional non-negativity constraint. At the logical level, <code>nat</code> values are represented as mathematical integers together with the invariant that their value is greater than or equal to zero.</p>
-<h2 id="relationship-to-int">Relationship to <code>int</code></h2>
-<p><code>nat</code> is not a separate numeric domain from <code>int</code>.</p>
-<ul>
-<li>Both <code>int</code> and <code>nat</code> are represented as mathematical integers</li>
-<li>Every <code>nat</code> is an <code>int</code></li>
-<li>Not every <code>int</code> is a <code>nat</code></li>
-</ul>
-<p>The distinction exists to encode semantic intent and to enable additional verification checks.</p>
-<h2 id="operations">Operations</h2>
-<p>All arithmetic and comparison operations defined on <code>int</code> are also defined on <code>nat</code>.</p>
-<table>
-<thead>
-<tr>
-<th>Operator</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>+</td>
-<td>Addition</td>
-</tr>
-<tr>
-<td>-</td>
-<td>Subtraction</td>
-</tr>
-<tr>
-<td>*</td>
-<td>Multiplication</td>
-</tr>
-<tr>
-<td>/</td>
-<td>Integer Division</td>
-</tr>
-<tr>
-<td>unary -</td>
-<td>Negation</td>
-</tr>
-</tbody>
-</table>
-<p>Operations on <code>nat</code> values produce results of type <code>int</code>. Assigning the result back to a <code>nat</code> variable requires proving that the result is non-negative.</p>
-<div class="language-go highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nx">let</span><span class="w"> </span><span class="nx">x</span><span class="p">:</span><span class="w"> </span><span class="nx">nat</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nx">let</span><span class="w"> </span><span class="nx">y</span><span class="p">:</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
-</span></code></pre></div>
-<h2 id="assignment-and-safety">Assignment and Safety</h2>
-<p>Assigning a value to a variable of type <code>nat</code> requires that the value be provably non-negative.</p>
-<div class="language-go highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nx">let</span><span class="w"> </span><span class="nx">n</span><span class="p">:</span><span class="w"> </span><span class="nx">nat</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w">        </span><span class="c1">// OK</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nx">let</span><span class="w"> </span><span class="nx">m</span><span class="p">:</span><span class="w"> </span><span class="nx">nat</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w">     </span><span class="c1">// OK</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nx">let</span><span class="w"> </span><span class="nx">k</span><span class="p">:</span><span class="w"> </span><span class="nx">nat</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w">     </span><span class="c1">// Requires proof that n ≥ 5</span>
-</span></code></pre></div>
-<p>If the verifier cannot prove that the assigned value is greater than or equal to zero, the program is rejected.</p>
-<h2 id="copy-semantics">Copy Semantics</h2>
-<p>Like <code>int</code>, <code>nat</code> is a <strong>copy</strong> type.</p>
-<ul>
-<li>
-<p>Reading a <code>nat</code> does not consume it</p>
-</li>
-<li>
-<p>Assigning or passing a <code>nat</code> never invalidates the original value</p>
-</li>
-<li>
-<p><code>nat</code> has no ownership, borrowing, or aliasing semantics</p>
-</li>
-</ul>
-<div class="language-go highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nx">let</span><span class="w"> </span><span class="nx">a</span><span class="p">:</span><span class="w"> </span><span class="nx">nat</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nx">let</span><span class="w"> </span><span class="nx">b</span><span class="p">:</span><span class="w"> </span><span class="nx">nat</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">a</span><span class="p">;</span>
-</span></code></pre></div>
-<h2 id="current-limitations-to-be-fixed">Current Limitations (To Be Fixed)</h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Some safety properties of <code>nat</code> are not fully enforced yet.</p>
-</div>
-<ul>
-<li>
-<p>Certain arithmetic operations may not generate complete non-negativity proofs</p>
-</li>
-<li>
-<p>Some assignments rely on conservative SMT checks</p>
-</li>
-<li>
-<p>Diagnostic messages for failed <code>nat</code> constraints may be incomplete</p>
-</li>
-</ul>
-<p>These limitations are known and will be addressed as Katon’s verification and type systems mature.</p>
+<p>In this example, the invariants ensure that the loop index remains within bounds and that <code>sum</code> stays non-negative throughout the loop execution.</p>
 
 
 
@@ -959,7 +702,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../int/" class="md-footer__link md-footer__link--prev" aria-label="Previous: int">
+          <a href="../lemma/" class="md-footer__link md-footer__link--prev" aria-label="Previous: lemma">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -969,20 +712,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                int
+                lemma
               </div>
             </div>
           </a>
         
         
           
-          <a href="../func/" class="md-footer__link md-footer__link--next" aria-label="Next: func">
+          <a href="../../contributing/" class="md-footer__link md-footer__link--next" aria-label="Next: Contributing">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                func
+                Contributing
               </div>
             </div>
             <div class="md-footer__button md-icon">

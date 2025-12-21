@@ -1,4 +1,4 @@
-site_name: Katon Verification Language
+site_name: Katon IVL
 site_url: https://katon-lang.github.io
 repo_url: https://github.com/katon-lang/katon
 repo_name: katon-lang/katon
@@ -21,9 +21,12 @@ nav:
   - CLI: cli.md
   - Documentation:
       - Overview: documentation.md
+      - let: documentation/let.md
       - int: documentation/int.md
       - nat: documentation/nat.md
       - func: documentation/func.md
+      - lemma: documentation/lemma.md
+      - while: documentation/while.md
   - Contributing: contributing.md
 markdown_extensions:
   - pymdownx.arithmatex:

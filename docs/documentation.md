@@ -4,6 +4,9 @@ It serves as the language reference, describing Katon’s syntax, core semantics
 
 ## Contents
 
+- [let](documentation/let.md)
 - [int](documentation/int.md)
 - [nat](documentation/nat.md)
 - [func](documentation/func.md)
+- [lemma](documentation/lemma.md)
+- [while](documentation/while.md)
