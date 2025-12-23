@@ -59,4 +59,5 @@ extra_javascript:
 
 extra_css:
   - https://unpkg.com/katex@0/dist/katex.min.css
+  - stylesheets/extra.css
 copyright: Copyright &copy; 2025 Katon Project

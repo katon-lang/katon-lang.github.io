@@ -1,4 +1,6 @@
-# Katon
+<p align="center">
+  <img src="./assets/logo.svg" width="450">
+</p>
 
 _A small, automated verification language for reasoning about state changes._
 
