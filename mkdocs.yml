@@ -36,8 +36,7 @@ nav:
       - func: documentation/func.md
       - lemma: documentation/lemma.md
       - while: documentation/while.md
-  - Blog:
-    - blog/index.md
+  - Blog: blog/index.md
   - Contributing: contributing.md
 markdown_extensions:
   - pymdownx.arithmatex:

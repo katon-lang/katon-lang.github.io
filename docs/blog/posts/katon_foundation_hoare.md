@@ -1,5 +1,6 @@
 ---
-title: "Katon Foundation I: Hoare Logic"
+title: "Katon Foundations I: Hoare Logic"
+slug: katon-foundations-hoare-logic
 draft: true 
 date: 2025-12-23
 authors:
