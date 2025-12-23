@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 site_name: Katon IVL
 site_url: https://katon-lang.github.io
 repo_url: https://github.com/katon-lang/katon
@@ -50,3 +51,54 @@ extra_javascript:
 extra_css:
   - https://unpkg.com/katex@0/dist/katex.min.css
 copyright: Copyright &copy; 2025 Katon Project
+=======
+site_name: Katon Verification Language
+site_url: https://katon-lang.github.io
+repo_url: https://github.com/katon-lang/katon
+repo_name: katon-lang/katon
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: black
+  font:
+    text: Open Sans
+    code: Roboto Mono
+  icon:
+    logo: material/fire
+  features:
+    - navigation.footer
+nav:
+  - Home: index.md
+  - Semantics: semantics.md
+  - Installation: installation.md
+  - CLI: cli.md
+  - Documentation:
+      - Overview: documentation.md
+      - int: documentation/int.md
+      - nat: documentation/nat.md
+      - func: documentation/func.md
+  - Contributing: contributing.md
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+extra_javascript:
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
+copyright: Copyright &copy; 2025 Katon Project
+>>>>>>> Stashed changes
