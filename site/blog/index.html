@@ -24,7 +24,7 @@
         <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../feed_rss_updated.xml">
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
@@ -32,7 +32,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -55,6 +55,8 @@
     
     
       <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -553,55 +555,6 @@
     
   
   
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Blog
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Blog
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
     
       
     
@@ -631,42 +584,6 @@
   
 
       </a>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Archive
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -732,6 +649,149 @@
         <h1 id="blog">Blog</h1>
       </header>
       
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="https://github.com/ezrantn.png" alt="Ezra Natanael">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2025-12-23 00:00:00+00:00">December 23, 2025</time></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              2 min read
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="katon-foundations-i-hoare-logic"><a class="toclink" href="2025/12/23/katon-foundations-hoare-logic/">Katon Foundations I: Hoare Logic</a></h2>
+<p>Katon is a verification-oriented language. It is not designed to be executed, interpreted, or compiled to machine code. Instead, Katon programs are <em>proved</em>.</p>
+<p>To make this precise, Katon is founded on Hoare logic — a classical framework for reasoning about program correctness using logical assertions.</p>
+<p>Hoare logic answers a simple but fundamental question:</p>
+<blockquote>
+<p>Under what conditions does a program satisfy its specification?</p>
+</blockquote>
+<p>This question is central to Katon’s design.</p>
+<h3 id="hoare-triples"><a class="toclink" href="2025/12/23/katon-foundations-hoare-logic/#hoare-triples">Hoare Triples</a></h3>
+<p>At the heart of Hoare logic is the Hoare triple:</p>
+<div class="arithmatex">\[
+\{P\} \quad C \quad \{Q\}
+\]</div>
+<p>It is read as:</p>
+<blockquote>
+<p>If the precondition P holds before executing program C, then the postcondition Q holds after C finishes.</p>
+</blockquote>
+<p>In Katon, every function denotes exactly one Hoare triple:</p>
+<div class="arithmatex">\[
+\{ requires\} \quad  body \quad \{ ensures\}
+\]</div>
+<p>A Katon function is verified if its Hoare triple is logically valid.</p>
+<h3 id="katon-functions-as-hoare-triples"><a class="toclink" href="2025/12/23/katon-foundations-hoare-logic/#katon-functions-as-hoare-triples">Katon Functions as Hoare Triples</a></h3>
+<p>Every Katon function corresponds to exactly one Hoare triple.</p>
+<div class="language-go highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">func</span><span class="w"> </span><span class="nx">f</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"> </span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nx">requires</span><span class="w"> </span><span class="nx">P</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">{</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nx">body</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">}</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="nx">ensures</span><span class="w"> </span><span class="nx">Q</span>
+</span></code></pre></div>
+<p>A Katon function is correct if its Hoare triple is logically valid.</p>
+<h3 id="partial-correctness"><a class="toclink" href="2025/12/23/katon-foundations-hoare-logic/#partial-correctness">Partial Correctness</a></h3>
+<p>Katon adopts the notion of partial correctness from Hoare logic.</p>
+<p>This means:</p>
+<blockquote>
+<p>If the function is called in a state satisfying requires,
+and if it terminates,
+then ensures holds.</p>
+</blockquote>
+<p>Hoare logic separates <em>correctness</em> from <em>termination</em>.
+This separation keeps the logic simple and compositional.</p>
+<h3 id="what-hoare-logic-does-not-define"><a class="toclink" href="2025/12/23/katon-foundations-hoare-logic/#what-hoare-logic-does-not-define">What Hoare Logic Does Not Define</a></h3>
+<p>Hoare logic intentionally does not define:</p>
+<ul>
+<li>
+<p>execution order</p>
+</li>
+<li>
+<p>runtime behavior</p>
+</li>
+<li>
+<p>performance</p>
+</li>
+<li>
+<p>machine state</p>
+</li>
+<li>
+<p>how values are computed</p>
+</li>
+</ul>
+<p>It only defines <strong>logical relationships between states</strong>.</p>
+<p>Katon inherits this philosophy.</p>
+<h3 id="specifications-as-first-class-citizens"><a class="toclink" href="2025/12/23/katon-foundations-hoare-logic/#specifications-as-first-class-citizens">Specifications as First-Class Citizens</a></h3>
+<p>In Hoare logic, specifications are not comments — they are mathematical objects.</p>
+<p>The program exists to justify the specification.</p>
+<p>In Katon:</p>
+<ul>
+<li>
+<p><code>requires</code> is not a runtime check</p>
+</li>
+<li>
+<p><code>ensures</code> is not documentation</p>
+</li>
+<li>
+<p>the function body is evidence that the specification holds</p>
+</li>
+</ul>
+<h3 id="why-katon-chooses-hoare-logic"><a class="toclink" href="2025/12/23/katon-foundations-hoare-logic/#why-katon-chooses-hoare-logic">Why Katon Chooses Hoare Logic</a></h3>
+<p>Hoare logic gives Katon:</p>
+<ul>
+<li>
+<p>a small and well-understood foundation</p>
+</li>
+<li>
+<p>compositional reasoning</p>
+</li>
+<li>
+<p>a clear notion of correctness</p>
+</li>
+<li>
+<p>independence from execution models</p>
+</li>
+</ul>
+<p>Most importantly, it lets Katon answer a single, precise question:</p>
+<blockquote>
+<p>Is this specification logically satisfied by this program?</p>
+</blockquote>
+    
+    
+  </div>
+</article>
+      
+      
+        
+          
+
+
+
+<nav class="md-pagination">
+  
+</nav>
+        
       
     </div>
   </div>
@@ -813,10 +873,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.footer"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.footer"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="../javascripts/katex.js"></script>
       

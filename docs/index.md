@@ -1,18 +1,17 @@
 <p align="center">
-  <img src="./assets/logo.svg" width="450">
+  <img src="./assets/logo.svg" width="300">
+  <br>
+  <br>
+  <i>A strict, SMT-powered language for state proofs.</i>
 </p>
 
-_A small, automated verification language for reasoning about state changes._
-
-## Overview
+<br>
 
 Katon is a **proof-oriented verification language** designed to answer a single question:
 
 > _Does this state-transforming computation satisfy its specification?_
 
-It is not a general-purpose programming language.
-It is a **proof-assistant theorem language**, in the spirit of Dafny,
-but deliberately **smaller, stricter, and more principled**.
+Katon is not a general-purpose language; it is a proof-assistant designed to be smaller, stricter, and more principled than traditional verification tools.
 
 Katon exists to make reasoning about mutable state _tractable, predictable,
 and fully automated_.

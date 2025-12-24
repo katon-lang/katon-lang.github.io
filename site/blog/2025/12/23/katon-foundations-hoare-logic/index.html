@@ -8,32 +8,30 @@
       
       
       
-        <link rel="canonical" href="https://katon-lang.github.io/contributing/">
+        <link rel="canonical" href="https://katon-lang.github.io/blog/2025/12/23/katon-foundations-hoare-logic/">
       
-      
-        <link rel="prev" href="../blog/">
       
       
       
         
       
       
-        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../feed_rss_created.xml">
-        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../feed_rss_updated.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../../../feed_rss_updated.xml">
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>Contributing - Katon</title>
+        <title>Katon Foundations I: Hoare Logic - Katon</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -54,9 +52,9 @@
     
       <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -79,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#contributing" class="md-skip">
+        <a href="#hoare-triples" class="md-skip">
           Skip to content
         </a>
       
@@ -95,7 +93,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Katon" class="md-header__button md-logo" aria-label="Katon" data-md-component="logo">
+    <a href="../../../../.." title="Katon" class="md-header__button md-logo" aria-label="Katon" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.66 11.2c-.23-.3-.51-.56-.77-.82-.67-.6-1.43-1.03-2.07-1.66C13.33 7.26 13 4.85 13.95 3c-.95.23-1.78.75-2.49 1.32-2.59 2.08-3.61 5.75-2.39 8.9.04.1.08.2.08.33 0 .22-.15.42-.35.5-.23.1-.47.04-.66-.12a.6.6 0 0 1-.14-.17c-1.13-1.43-1.31-3.48-.55-5.12C5.78 10 4.87 12.3 5 14.47c.06.5.12 1 .29 1.5.14.6.41 1.2.71 1.73 1.08 1.73 2.95 2.97 4.96 3.22 2.14.27 4.43-.12 6.07-1.6 1.83-1.66 2.47-4.32 1.53-6.6l-.13-.26c-.21-.46-.77-1.26-.77-1.26m-3.16 6.3c-.28.24-.74.5-1.1.6-1.12.4-2.24-.16-2.9-.82 1.19-.28 1.9-1.16 2.11-2.05.17-.8-.15-1.46-.28-2.23-.12-.74-.1-1.37.17-2.06.19.38.39.76.63 1.06.77 1 1.98 1.44 2.24 2.8.04.14.06.28.06.43.03.82-.33 1.72-.93 2.27"/></svg>
@@ -115,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Contributing
+              Katon Foundations I: Hoare Logic
             
           </span>
         </div>
@@ -156,7 +154,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -165,7 +165,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Katon" class="md-nav__button md-logo" aria-label="Katon" data-md-component="logo">
+    <a href="../../../../.." title="Katon" class="md-nav__button md-logo" aria-label="Katon" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.66 11.2c-.23-.3-.51-.56-.77-.82-.67-.6-1.43-1.03-2.07-1.66C13.33 7.26 13 4.85 13.95 3c-.95.23-1.78.75-2.49 1.32-2.59 2.08-3.61 5.75-2.39 8.9.04.1.08.2.08.33 0 .22-.15.42-.35.5-.23.1-.47.04-.66-.12a.6.6 0 0 1-.14-.17c-1.13-1.43-1.31-3.48-.55-5.12C5.78 10 4.87 12.3 5 14.47c.06.5.12 1 .29 1.5.14.6.41 1.2.71 1.73 1.08 1.73 2.95 2.97 4.96 3.22 2.14.27 4.43-.12 6.07-1.6 1.83-1.66 2.47-4.32 1.53-6.6l-.13-.26c-.21-.46-.77-1.26-.77-1.26m-3.16 6.3c-.28.24-.74.5-1.1.6-1.12.4-2.24-.16-2.9-.82 1.19-.28 1.9-1.16 2.11-2.05.17-.8-.15-1.46-.28-2.23-.12-.74-.1-1.37.17-2.06.19.38.39.76.63 1.06.77 1 1.98 1.44 2.24 2.8.04.14.06.28.06.43.03.82-.33 1.72-.93 2.27"/></svg>
@@ -195,7 +195,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../../../../.." class="md-nav__link">
         
   
   
@@ -222,7 +222,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../semantics/" class="md-nav__link">
+      <a href="../../../../../semantics/" class="md-nav__link">
         
   
   
@@ -249,7 +249,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../installation/" class="md-nav__link">
+      <a href="../../../../../installation/" class="md-nav__link">
         
   
   
@@ -276,7 +276,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cli/" class="md-nav__link">
+      <a href="../../../../../cli/" class="md-nav__link">
         
   
   
@@ -350,7 +350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../documentation/" class="md-nav__link">
+      <a href="../../../../../documentation/" class="md-nav__link">
         
   
   
@@ -378,7 +378,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../documentation/let/" class="md-nav__link">
+      <a href="../../../../../documentation/let/" class="md-nav__link">
         
   
   
@@ -406,7 +406,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../documentation/int/" class="md-nav__link">
+      <a href="../../../../../documentation/int/" class="md-nav__link">
         
   
   
@@ -434,7 +434,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../documentation/nat/" class="md-nav__link">
+      <a href="../../../../../documentation/nat/" class="md-nav__link">
         
   
   
@@ -462,7 +462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../documentation/func/" class="md-nav__link">
+      <a href="../../../../../documentation/func/" class="md-nav__link">
         
   
   
@@ -490,7 +490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../documentation/lemma/" class="md-nav__link">
+      <a href="../../../../../documentation/lemma/" class="md-nav__link">
         
   
   
@@ -518,7 +518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../documentation/while/" class="md-nav__link">
+      <a href="../../../../../documentation/while/" class="md-nav__link">
         
   
   
@@ -550,12 +550,14 @@
       
   
   
+    
+  
   
     
   
   
-    <li class="md-nav__item">
-      <a href="../blog/" class="md-nav__link">
+    <li class="md-nav__item md-nav__item--active">
+      <a href="../../../../" class="md-nav__link">
         
   
   
@@ -579,37 +581,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Contributing
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../../contributing/" class="md-nav__link">
         
   
   
@@ -625,59 +600,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#ways-to-contribute" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Ways to Contribute
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contribution-process" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Contribution Process
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#repository" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Repository
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -690,6 +612,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -699,8 +623,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -709,10 +631,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ways-to-contribute" class="md-nav__link">
+  <a href="#hoare-triples" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ways to Contribute
+        Hoare Triples
       
     </span>
   </a>
@@ -720,10 +642,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#contribution-process" class="md-nav__link">
+  <a href="#katon-functions-as-hoare-triples" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Contribution Process
+        Katon Functions as Hoare Triples
       
     </span>
   </a>
@@ -731,10 +653,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#repository" class="md-nav__link">
+  <a href="#partial-correctness" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Repository
+        Partial Correctness
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-hoare-logic-does-not-define" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Hoare Logic Does Not Define
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specifications-as-first-class-citizens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Specifications as First-Class Citizens
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-katon-chooses-hoare-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Katon Chooses Hoare Logic
       
     </span>
   </a>
@@ -750,71 +705,212 @@
             
           
           
-            <div class="md-content" data-md-component="content">
-              
-              <article class="md-content__inner md-typeset">
-                
-                  
-
-
-  
-  
-
-
-<h1 id="contributing">Contributing</h1>
-<p>Katon is still in an early stage of development.</p>
-<p>If you are interested in formal verification, programming languages, or compiler construction—or if you are working on a programming languages assignment—you are welcome to try Katon and contribute.</p>
-<h2 id="ways-to-contribute">Ways to Contribute</h2>
-<p>Contributions of all kinds are appreciated, including:</p>
-<ol>
-<li>
-<p>Bug reports:
-report incorrect behavior, crashes, or unsound verification results.</p>
-</li>
-<li>
-<p>Documentation improvements:
-clarify existing documentation, fix inaccuracies, or add missing language reference sections.</p>
-</li>
-<li>
-<p>Language and verifier development:
-work on the type system, semantics, verification condition generation, or SMT integration.</p>
-</li>
-<li>
-<p>Design discussions:
-propose or discuss language features, semantics, or design trade-offs.</p>
-</li>
-</ol>
-<h2 id="contribution-process">Contribution Process</h2>
-<ol>
-<li>
-<p>Use GitHub Issues for bug reports, feature requests, and design discussions.</p>
-</li>
-<li>
-<p>Submit changes via pull requests.</p>
-</li>
-<li>
-<p>Small, focused pull requests are preferred.</p>
-</li>
-</ol>
-<p>For non-trivial changes, opening an issue for discussion first is recommended.</p>
-<h2 id="repository">Repository</h2>
-<p><a href="https://github.com/katon-lang/katon">Katon on GitHub</a></p>
-
-
-
-
-
-
-
-
-
-
-
-
-                
-              </article>
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../../" class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
             </div>
+            
+              <div class="md-post__authors md-typeset">
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="https://github.com/ezrantn.png" alt="Ezra Natanael">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>
+                        
+                          Ezra Natanael
+                        
+                      </strong>
+                      <br>
+                      Creator
+                    </span>
+                  </div>
+                
+              </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2025-12-23 00:00:00+00:00" class="md-ellipsis">December 23, 2025</time>
+                      </div>
+                    </li>
+                    
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              2 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+            
+          </nav>
           
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+
+
+
+  
+  
+
+
+  <h1>Katon Foundations I: Hoare Logic</h1>
+
+<p>Katon is a verification-oriented language. It is not designed to be executed, interpreted, or compiled to machine code. Instead, Katon programs are <em>proved</em>.</p>
+<p>To make this precise, Katon is founded on Hoare logic — a classical framework for reasoning about program correctness using logical assertions.</p>
+<p>Hoare logic answers a simple but fundamental question:</p>
+<blockquote>
+<p>Under what conditions does a program satisfy its specification?</p>
+</blockquote>
+<p>This question is central to Katon’s design.</p>
+<h2 id="hoare-triples">Hoare Triples</h2>
+<p>At the heart of Hoare logic is the Hoare triple:</p>
+<div class="arithmatex">\[
+\{P\} \quad C \quad \{Q\}
+\]</div>
+<p>It is read as:</p>
+<blockquote>
+<p>If the precondition P holds before executing program C, then the postcondition Q holds after C finishes.</p>
+</blockquote>
+<p>In Katon, every function denotes exactly one Hoare triple:</p>
+<div class="arithmatex">\[
+\{ requires\} \quad  body \quad \{ ensures\}
+\]</div>
+<p>A Katon function is verified if its Hoare triple is logically valid.</p>
+<h2 id="katon-functions-as-hoare-triples">Katon Functions as Hoare Triples</h2>
+<p>Every Katon function corresponds to exactly one Hoare triple.</p>
+<div class="language-go highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">func</span><span class="w"> </span><span class="nx">f</span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w"> </span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nx">requires</span><span class="w"> </span><span class="nx">P</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">{</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nx">body</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">}</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="nx">ensures</span><span class="w"> </span><span class="nx">Q</span>
+</span></code></pre></div>
+<p>A Katon function is correct if its Hoare triple is logically valid.</p>
+<h2 id="partial-correctness">Partial Correctness</h2>
+<p>Katon adopts the notion of partial correctness from Hoare logic.</p>
+<p>This means:</p>
+<blockquote>
+<p>If the function is called in a state satisfying requires,
+and if it terminates,
+then ensures holds.</p>
+</blockquote>
+<p>Hoare logic separates <em>correctness</em> from <em>termination</em>.
+This separation keeps the logic simple and compositional.</p>
+<h2 id="what-hoare-logic-does-not-define">What Hoare Logic Does Not Define</h2>
+<p>Hoare logic intentionally does not define:</p>
+<ul>
+<li>
+<p>execution order</p>
+</li>
+<li>
+<p>runtime behavior</p>
+</li>
+<li>
+<p>performance</p>
+</li>
+<li>
+<p>machine state</p>
+</li>
+<li>
+<p>how values are computed</p>
+</li>
+</ul>
+<p>It only defines <strong>logical relationships between states</strong>.</p>
+<p>Katon inherits this philosophy.</p>
+<h2 id="specifications-as-first-class-citizens">Specifications as First-Class Citizens</h2>
+<p>In Hoare logic, specifications are not comments — they are mathematical objects.</p>
+<p>The program exists to justify the specification.</p>
+<p>In Katon:</p>
+<ul>
+<li>
+<p><code>requires</code> is not a runtime check</p>
+</li>
+<li>
+<p><code>ensures</code> is not documentation</p>
+</li>
+<li>
+<p>the function body is evidence that the specification holds</p>
+</li>
+</ul>
+<h2 id="why-katon-chooses-hoare-logic">Why Katon Chooses Hoare Logic</h2>
+<p>Hoare logic gives Katon:</p>
+<ul>
+<li>
+<p>a small and well-understood foundation</p>
+</li>
+<li>
+<p>compositional reasoning</p>
+</li>
+<li>
+<p>a clear notion of correctness</p>
+</li>
+<li>
+<p>independence from execution models</p>
+</li>
+</ul>
+<p>Most importantly, it lets Katon answer a single, precise question:</p>
+<blockquote>
+<p>Is this specification logically satisfied by this program?</p>
+</blockquote>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
@@ -823,28 +919,6 @@ propose or discuss language features, semantics, or design trade-offs.</p>
       
         <footer class="md-footer">
   
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
-        
-          
-          <a href="../blog/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Blog">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              <div class="md-ellipsis">
-                Blog
-              </div>
-            </div>
-          </a>
-        
-        
-      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -876,12 +950,12 @@ propose or discuss language features, semantics, or design trade-offs.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.footer"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../../..", "features": ["navigation.footer"], "search": "../../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="../javascripts/katex.js"></script>
+        <script src="../../../../../javascripts/katex.js"></script>
       
         <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
       
