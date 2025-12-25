@@ -14,10 +14,14 @@ theme:
     logo: material/fire
   features:
     - navigation.footer
-plugins: 
+    - search.suggest
+    - search.highlight
+    - search.share
+plugins:
   - blog
+  - search
   - rss:
-      match_path: blog/posts/.* 
+      match_path: blog/posts/.*
       date_from_meta:
         as_creation: date
       categories:
