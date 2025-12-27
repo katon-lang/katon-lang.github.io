@@ -1,6 +1,6 @@
 # func
 
-A `func` defines a **callable, executable unit** that returns a value and is compiled into LLVM IR.
+A `func` defines a **callable, executable unit** that can returns a value.
 
 Functions may have side effects (for example, once mutability is introduced), but their behavior is **specified and constrained by contracts**. Every `func` must be verified to satisfy its specification.
 

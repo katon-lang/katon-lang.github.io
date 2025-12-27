@@ -2,7 +2,7 @@
   <img src="./assets/logo.svg" width="300">
   <br>
   <br>
-  <i>A strict, SMT-powered language for state proofs.</i>
+  <i>A strict, statically typed prover language with SMT-backed state reasoning.</i>
 </p>
 
 <br>

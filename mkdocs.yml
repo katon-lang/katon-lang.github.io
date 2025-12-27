@@ -40,6 +40,9 @@ nav:
       - func: documentation/func.md
       - lemma: documentation/lemma.md
       - while: documentation/while.md
+      - if/else: documentation/ifelse.md
+      - borrowing: documentation/borrowing.md
+      - update: documentation/update.md
   - Blog: blog/index.md
   - Contributing: contributing.md
 markdown_extensions:

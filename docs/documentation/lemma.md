@@ -2,7 +2,7 @@
 
 A `lemma` defines ghost code used solely for verification.
 
-Lemmas are never emitted into LLVM IR and have no runtime representation. They do not produce executable behavior; instead, they establish logical facts for the SMT solver.
+Lemmas have no runtime representation. They do not produce executable behavior; instead, they establish logical facts for the SMT solver.
 
 A lemma may include:
 

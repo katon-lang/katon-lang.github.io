@@ -9,3 +9,6 @@ It serves as the language reference, describing Katon’s syntax, core semantics
 - [func](documentation/func.md)
 - [lemma](documentation/lemma.md)
 - [while](documentation/while.md)
+- [if/else](documentation/ifelse.md)
+- [borrowing](documentation/borrowing.md)
+- [update](documentation/update.md)
