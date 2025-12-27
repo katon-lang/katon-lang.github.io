@@ -12,3 +12,4 @@ It serves as the language reference, describing Katon’s syntax, core semantics
 - [if/else](documentation/ifelse.md)
 - [borrowing](documentation/borrowing.md)
 - [update](documentation/update.md)
+- [modifies](documentation/modifies.md)

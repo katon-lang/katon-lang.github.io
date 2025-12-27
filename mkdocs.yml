@@ -43,6 +43,7 @@ nav:
       - if/else: documentation/ifelse.md
       - borrowing: documentation/borrowing.md
       - update: documentation/update.md
+      - modifies: documentation/modifies.md
   - Blog: blog/index.md
   - Contributing: contributing.md
 markdown_extensions:
